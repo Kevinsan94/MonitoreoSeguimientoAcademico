@@ -3,16 +3,16 @@ package com.upb.team4.utils;
 public class AuthUtils {
 		
 	
-	public static Boolean verifyCredentials(String username, String password) {
+	public static Boolean verifiedCredentials(String username, String password) {
 		
-		if (username == null && password == null) {return true;}
+		if (username == null && password == null) {return false;}
 			
-		return false;
+		return true;
 	}
 	
-	public static Boolean securePassword(String username, String password){
+	public static Boolean securedPassword(String username, String password){
 		
-		Boolean secured = true;
+		Boolean secured = false;
 		
 		int min =8;
         int max=16;
@@ -46,7 +46,7 @@ public class AuthUtils {
         		}
         	}
         	if(special>=1 && loCount>=1 && upCount>=1 && digit>=1){
-        		secured = false;
+        		secured = true;
         	} 
 
         }

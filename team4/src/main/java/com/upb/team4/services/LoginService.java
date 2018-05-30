@@ -30,11 +30,11 @@ public class LoginService {
 		String response = "Not Accepted";
 		try {
 			
-			if (AuthUtils.verifyCredentials(username, password)) {
+			if (!AuthUtils.verifiedCredentials(username, password)) {
 				return "You must enter valid username and password";
 			} 
 			
-			if(AuthUtils.securePassword(username, password)) {
+			if(!AuthUtils.securedPassword(username, password)) {
 				return "You must enter a secure password";
 			}
 			
