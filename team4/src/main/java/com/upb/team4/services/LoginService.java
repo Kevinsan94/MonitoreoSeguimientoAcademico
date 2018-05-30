@@ -8,6 +8,7 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 import com.upb.team4.beans.Usuario;
+import com.upb.team4.utils.AuthUtils;
 import com.upb.team4.utils.DBUtils;
 
 @Path("/login")
@@ -25,24 +26,27 @@ public class LoginService {
 	}
 	
 	private String authenticate(String username, String password) {
+		
 		String response = "Not Accepted";
-		if (username==null && password==null) {
-			response = "You must enter user and pass";
-		} else
-			try {
-				if (DBUtils.verificatedUser(username, password)){
-					response = "Accepted";
-				} else if (password.contains(username)) {
-					response = "Password contains username, not accepted";
-				} else if (password.length()<8) {
-					response = "Password invalid";
-				}
-			} catch (ClassNotFoundException e) {
-				response = "Ocurrio un error";
-			} catch (NullPointerException es) {
-				response = "Ocurrio un error";
+		try {
+			
+			if (AuthUtils.verifyCredentials(username, password)) {
+				return "You must enter valid username and password";
+			} 
+			
+			if(AuthUtils.securePassword(username, password)) {
+				return "You must enter a secure password";
 			}
+			
+			if (DBUtils.verificatedUser(username, password)){
+				response = "Accepted";
+			}
+			
+			
+		} catch (ClassNotFoundException e) {
+			response = "Error";
+		}
+		
 		return response;
 	}
-	
 }
