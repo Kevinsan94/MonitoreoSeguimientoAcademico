@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="dfcc3734-8812-4d86-8f2d-ebbd2c69f152" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/team4/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/team4/.gradle/4.7/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/team4/.gradle/4.7/fileContent/fileContent.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/team4/.gradle/4.7/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/team4/.gradle/4.7/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/team4/.gradle/4.7/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/team4/.gradle/4.7/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/team4/.gradle/4.7/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/team4/.gradle/4.7/taskHistory/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/team4/.gradle/4.7/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/team4/.gradle/4.7/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/team4/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/team4/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/team4/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/team4/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/team4/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/team4/.settings/.jsdtscope" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/team4/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/team4/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/team4/.settings/org.eclipse.wst.common.component" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/team4/.settings/org.eclipse.wst.common.project.facet.core.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/team4/.settings/org.eclipse.wst.jsdt.ui.superType.container" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/team4/.settings/org.eclipse.wst.jsdt.ui.superType.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/team4/.settings/org.eclipse.wst.validation.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/team4/bin/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/team4/build/classes/java/main/com/upb/team4/beans/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/team4/build/classes/java/main/com/upb/team4/beans/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/team4/build/classes/java/main/com/upb/team4/beans/Usuario.class" beforeDir="false" afterPath="$PROJECT_DIR$/team4/build/classes/java/main/com/upb/team4/beans/Usuario.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/team4/build/classes/java/main/com/upb/team4/services/CreateStudentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/team4/build/classes/java/main/com/upb/team4/services/CreateStudentService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/team4/build/classes/java/main/com/upb/team4/services/DeleteStudentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/team4/build/classes/java/main/com/upb/team4/services/DeleteStudentService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/team4/build/classes/java/main/com/upb/team4/services/LoginService.class" beforeDir="false" afterPath="$PROJECT_DIR$/team4/build/classes/java/main/com/upb/team4/services/LoginService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/team4/build/classes/java/main/com/upb/team4/utils/AuthUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/team4/build/classes/java/main/com/upb/team4/utils/AuthUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/team4/build/classes/java/main/com/upb/team4/utils/DBConn.class" beforeDir="false" afterPath="$PROJECT_DIR$/team4/build/classes/java/main/com/upb/team4/utils/DBConn.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/team4/build/classes/java/main/com/upb/team4/utils/DBUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/team4/build/classes/java/main/com/upb/team4/utils/DBUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/team4/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/team4/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/team4/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/team4/target/classes/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/team4/target/classes/com/upb/team4/beans/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/team4/target/classes/com/upb/team4/beans/Usuario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/team4/target/classes/com/upb/team4/services/CreateStudentService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/team4/target/classes/com/upb/team4/services/LoginService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/team4/target/classes/com/upb/team4/utils/DBConn.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/team4/target/classes/com/upb/team4/utils/DBUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/team4/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/team4/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/team4/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/team4/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/team4/target/team4/WEB-INF/classes/com/upb/team4/beans/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/team4/target/team4/WEB-INF/classes/com/upb/team4/beans/Usuario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/team4/target/team4/WEB-INF/classes/com/upb/team4/services/CreateStudentService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/team4/target/team4/WEB-INF/classes/com/upb/team4/services/LoginService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/team4/target/team4/WEB-INF/classes/com/upb/team4/utils/DBConn.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/team4/target/team4/WEB-INF/classes/com/upb/team4/utils/DBUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/team4/target/team4/WEB-INF/lib/activation-1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/team4/target/team4/WEB-INF/lib/jackson-core-asl-1.9.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/team4/target/team4/WEB-INF/lib/jackson-jaxrs-1.9.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/team4/target/team4/WEB-INF/lib/jackson-mapper-asl-1.9.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/team4/target/team4/WEB-INF/lib/jackson-xc-1.9.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/team4/target/team4/WEB-INF/lib/jaxb-api-2.2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/team4/target/team4/WEB-INF/lib/jaxb-impl-2.2.3-1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/team4/target/team4/WEB-INF/lib/jersey-client-1.19.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/team4/target/team4/WEB-INF/lib/jersey-core-1.19.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/team4/target/team4/WEB-INF/lib/jersey-json-1.19.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/team4/target/team4/WEB-INF/lib/jersey-server-1.19.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/team4/target/team4/WEB-INF/lib/jersey-servlet-1.19.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/team4/target/team4/WEB-INF/lib/jettison-1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/team4/target/team4/WEB-INF/lib/jsr311-api-1.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/team4/target/team4/WEB-INF/lib/mysql-connector-java-5.1.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/team4/target/team4/WEB-INF/lib/stax-api-1.0-2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/team4/target/team4/WEB-INF/web.xml" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="LoginService.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/team4/src/main/java/com/upb/team4/services/LoginService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="38" column="13" selection-start-line="38" selection-end-line="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="28" />
+    <option name="width" value="1346" />
+    <option name="height" value="775" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="MonitoreoSeguimientoAcademico" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MonitoreoSeguimientoAcademico" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MonitoreoSeguimientoAcademico" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MonitoreoSeguimientoAcademico" type="462c0819:PsiDirectoryNode" />
+              <item name="team4" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MonitoreoSeguimientoAcademico" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MonitoreoSeguimientoAcademico" type="462c0819:PsiDirectoryNode" />
+              <item name="team4" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MonitoreoSeguimientoAcademico" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MonitoreoSeguimientoAcademico" type="462c0819:PsiDirectoryNode" />
+              <item name="team4" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MonitoreoSeguimientoAcademico" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MonitoreoSeguimientoAcademico" type="462c0819:PsiDirectoryNode" />
+              <item name="team4" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MonitoreoSeguimientoAcademico" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MonitoreoSeguimientoAcademico" type="462c0819:PsiDirectoryNode" />
+              <item name="team4" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MonitoreoSeguimientoAcademico" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MonitoreoSeguimientoAcademico" type="462c0819:PsiDirectoryNode" />
+              <item name="team4" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MonitoreoSeguimientoAcademico" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MonitoreoSeguimientoAcademico" type="462c0819:PsiDirectoryNode" />
+              <item name="team4" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="upb" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MonitoreoSeguimientoAcademico" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MonitoreoSeguimientoAcademico" type="462c0819:PsiDirectoryNode" />
+              <item name="team4" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="upb" type="462c0819:PsiDirectoryNode" />
+              <item name="team4" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MonitoreoSeguimientoAcademico" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MonitoreoSeguimientoAcademico" type="462c0819:PsiDirectoryNode" />
+              <item name="team4" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info id="Designer" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24963397" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/team4/src/main/java/com/upb/team4/services/LoginService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="38" column="13" selection-start-line="38" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
