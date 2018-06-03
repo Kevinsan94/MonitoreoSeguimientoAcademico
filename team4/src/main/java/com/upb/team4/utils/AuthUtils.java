@@ -21,7 +21,7 @@ public class AuthUtils {
         int upCount=0;
         int loCount=0;
         
-        if(password.contains(username)) {return true;}
+        if(password.contains(username)) {return false;}
         if(password.length()>=min && password.length()<=max){
         	
         	

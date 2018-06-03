@@ -30,9 +30,18 @@ public class DBUtils {
         DBConn.getDB().setUpdate(sql);
     }
     
+    public static void modificarAlumno(String nombre) {
+    	
+    }
     
-
-
+    public static void eliminarAlumno(String code) throws ClassNotFoundException{
+        
+    	int ncode = Integer.parseInt(code);
+        String sql = "delete from estudiante where id_estudiante = '"+ncode+"';";
+        DBConn.getDB().setUpdate(sql);
+    }
+    
+    
     public static Student findAlumno(String code) throws ClassNotFoundException {
         Student alumno = null;
         String sql = "select * from estudiante where id_estudiante = "+code+";"; 
