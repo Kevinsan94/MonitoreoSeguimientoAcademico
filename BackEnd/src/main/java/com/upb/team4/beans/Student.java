@@ -8,7 +8,13 @@ public class Student {
 	private int number;
 	private String email;
 	private String password;
-	
+
+	public int getCode() {
+		return code;
+	}
+	public void setCode(int code) {
+		this.code = code;
+	}
 	public String getName() {
 		return name;
 	}

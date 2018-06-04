@@ -17,10 +17,9 @@ import javax.ws.rs.core.Response;
 public class LoginService {
 	
 	@POST
-	@Path("/auth")
 	@Consumes({MediaType.APPLICATION_JSON})
 	@Produces({MediaType.TEXT_PLAIN})
-	public Response validaUsuario(Usuario u) {
+	public Response validateUser(Usuario u) {
 		
 		String response = authenticate(u.getUsername(),u.getPassword());
 		

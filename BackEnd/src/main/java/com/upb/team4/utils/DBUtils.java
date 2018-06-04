@@ -13,8 +13,8 @@ public class DBUtils {
     public static Boolean verificatedUser(String code, String pass) throws ClassNotFoundException{
         boolean verified = false; 
         try {
-            String sql = "Select id_estudiante, contraseña from estudiante"
-                    +" where id_estudiante = '"+code+"' and contraseña = '"+pass+"';";
+            String sql = "Select id_estudiante, contraseï¿½a from estudiante"
+                    +" where id_estudiante = '"+code+"' and contraseï¿½a = '"+pass+"';";
             ResultSet rs = DBConn.getDB().getQuery(sql);
             verified = rs.next();
         } catch (SQLException ex) {
@@ -25,19 +25,20 @@ public class DBUtils {
     
     public static void crearAlumno(String nombre, String apellido, int telefono, String email, String password) throws ClassNotFoundException{
         
-        String sql = "insert into estudiante (nombre, apellido, telefono, email, contraseña) values('"+nombre+"' ,"
+        String sql = "insert into estudiante (nombre, apellido, telefono, email, contraseï¿½a) values('"+nombre+"' ,"
                 + "'"+apellido+"', '"+telefono+"', '"+email+"', '"+password+"');";
         DBConn.getDB().setUpdate(sql);
     }
     
-    public static void modificarAlumno(String nombre) {
-    	
+    public static void modificarAlumno(Student e) throws ClassNotFoundException{
+        String sql = "update estudiante set nombre='"+e.getName()+"', apellido ='"+e.getLastname()+"',"
+                +"telefono = '"+e.getEmail()+"',email= '"+e.getNumber()+"'contraseï¿½a= '"+e.getPassword()+"' where id_estudiante='"+e.getCode()+"';";
+        DBConn.getDB().setUpdate(sql);
     }
     
-    public static void eliminarAlumno(String code) throws ClassNotFoundException{
-        
-    	int ncode = Integer.parseInt(code);
-        String sql = "delete from estudiante where id_estudiante = '"+ncode+"';";
+    public static void eliminarAlumno(int code) throws ClassNotFoundException{
+
+        String sql = "delete from estudiante where id_estudiante = '"+code+"';";
         DBConn.getDB().setUpdate(sql);
     }
     
@@ -52,7 +53,7 @@ public class DBUtils {
                 String apellido = st.getString("apellido");
                 int telefono = st.getInt("telefono");
                 String email = st.getString("email");
-                String pass = st.getString("contraseña");
+                String pass = st.getString("contraseï¿½a");
                 alumno = new Student();
                 alumno.setName(nombre);
                 alumno.setLastname(apellido);
