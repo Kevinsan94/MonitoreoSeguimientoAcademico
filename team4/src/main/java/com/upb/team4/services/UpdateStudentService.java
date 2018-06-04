@@ -23,6 +23,6 @@ public class LoginService {
 
     @GET
     public Response test(){
-        return Response.ok("OK").build();
+        return Response.ok("OKEY").build();
     }
 }
