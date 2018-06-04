@@ -1,4 +1,4 @@
-package com.upb.team4.beans;
+package main.java.com.upb.team4.beans;
 
 public class Usuario {
 	
