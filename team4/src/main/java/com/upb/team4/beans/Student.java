@@ -1,7 +1,8 @@
 package com.upb.team4.beans;
 
 public class Student {
-	
+
+	private int code;
 	private String name;
 	private String lastname;
 	private int number;

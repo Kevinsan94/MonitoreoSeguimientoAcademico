@@ -2,71 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dfcc3734-8812-4d86-8f2d-ebbd2c69f152" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/team4/.classpath" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/team4/.gradle/4.7/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/team4/.gradle/4.7/fileContent/fileContent.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/team4/.gradle/4.7/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/team4/.gradle/4.7/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/team4/.gradle/4.7/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/team4/.gradle/4.7/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/team4/.gradle/4.7/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/team4/.gradle/4.7/taskHistory/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/team4/.gradle/4.7/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/team4/.gradle/4.7/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/team4/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/team4/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/team4/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/team4/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/team4/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/team4/.settings/.jsdtscope" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/team4/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/team4/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/team4/.settings/org.eclipse.wst.common.component" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/team4/.settings/org.eclipse.wst.common.project.facet.core.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/team4/.settings/org.eclipse.wst.jsdt.ui.superType.container" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/team4/.settings/org.eclipse.wst.jsdt.ui.superType.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/team4/.settings/org.eclipse.wst.validation.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/team4/bin/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/team4/build/classes/java/main/com/upb/team4/beans/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/team4/build/classes/java/main/com/upb/team4/beans/Student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/team4/build/classes/java/main/com/upb/team4/beans/Usuario.class" beforeDir="false" afterPath="$PROJECT_DIR$/team4/build/classes/java/main/com/upb/team4/beans/Usuario.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/team4/build/classes/java/main/com/upb/team4/services/CreateStudentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/team4/build/classes/java/main/com/upb/team4/services/CreateStudentService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/team4/build/classes/java/main/com/upb/team4/services/DeleteStudentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/team4/build/classes/java/main/com/upb/team4/services/DeleteStudentService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/team4/build/classes/java/main/com/upb/team4/services/LoginService.class" beforeDir="false" afterPath="$PROJECT_DIR$/team4/build/classes/java/main/com/upb/team4/services/LoginService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/team4/build/classes/java/main/com/upb/team4/utils/AuthUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/team4/build/classes/java/main/com/upb/team4/utils/AuthUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/team4/build/classes/java/main/com/upb/team4/utils/DBConn.class" beforeDir="false" afterPath="$PROJECT_DIR$/team4/build/classes/java/main/com/upb/team4/utils/DBConn.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/team4/build/classes/java/main/com/upb/team4/utils/DBUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/team4/build/classes/java/main/com/upb/team4/utils/DBUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/team4/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/team4/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/team4/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/team4/target/classes/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/team4/target/classes/com/upb/team4/beans/Student.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/team4/target/classes/com/upb/team4/beans/Usuario.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/team4/target/classes/com/upb/team4/services/CreateStudentService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/team4/target/classes/com/upb/team4/services/LoginService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/team4/target/classes/com/upb/team4/utils/DBConn.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/team4/target/classes/com/upb/team4/utils/DBUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/team4/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/team4/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/team4/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/team4/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/team4/target/team4/WEB-INF/classes/com/upb/team4/beans/Student.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/team4/target/team4/WEB-INF/classes/com/upb/team4/beans/Usuario.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/team4/target/team4/WEB-INF/classes/com/upb/team4/services/CreateStudentService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/team4/target/team4/WEB-INF/classes/com/upb/team4/services/LoginService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/team4/target/team4/WEB-INF/classes/com/upb/team4/utils/DBConn.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/team4/target/team4/WEB-INF/classes/com/upb/team4/utils/DBUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/team4/target/team4/WEB-INF/lib/activation-1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/team4/target/team4/WEB-INF/lib/jackson-core-asl-1.9.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/team4/target/team4/WEB-INF/lib/jackson-jaxrs-1.9.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/team4/target/team4/WEB-INF/lib/jackson-mapper-asl-1.9.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/team4/target/team4/WEB-INF/lib/jackson-xc-1.9.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/team4/target/team4/WEB-INF/lib/jaxb-api-2.2.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/team4/target/team4/WEB-INF/lib/jaxb-impl-2.2.3-1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/team4/target/team4/WEB-INF/lib/jersey-client-1.19.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/team4/target/team4/WEB-INF/lib/jersey-core-1.19.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/team4/target/team4/WEB-INF/lib/jersey-json-1.19.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/team4/target/team4/WEB-INF/lib/jersey-server-1.19.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/team4/target/team4/WEB-INF/lib/jersey-servlet-1.19.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/team4/target/team4/WEB-INF/lib/jettison-1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/team4/target/team4/WEB-INF/lib/jsr311-api-1.1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/team4/target/team4/WEB-INF/lib/mysql-connector-java-5.1.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/team4/target/team4/WEB-INF/lib/stax-api-1.0-2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/team4/target/team4/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/team4/build/libs/team4-0.0.1-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/team4/build/libs/team4-0.0.1-SNAPSHOT.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/team4/src/main/java/com/upb/team4/beans/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/team4/src/main/java/com/upb/team4/beans/Student.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -77,11 +15,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="LoginService.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LoginService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/team4/src/main/java/com/upb/team4/services/LoginService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="38" column="13" selection-start-line="38" selection-end-line="39" />
+            <state relative-caret-position="459">
+              <caret line="36" column="50" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Student.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/team4/src/main/java/com/upb/team4/beans/Student.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -90,6 +37,13 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/team4/src/main/java/com/upb/team4/beans/Student.java" />
+      </list>
+    </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="28" />
@@ -170,6 +124,30 @@
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="upb" type="462c0819:PsiDirectoryNode" />
               <item name="team4" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MonitoreoSeguimientoAcademico" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MonitoreoSeguimientoAcademico" type="462c0819:PsiDirectoryNode" />
+              <item name="team4" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="upb" type="462c0819:PsiDirectoryNode" />
+              <item name="team4" type="462c0819:PsiDirectoryNode" />
+              <item name="beans" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MonitoreoSeguimientoAcademico" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MonitoreoSeguimientoAcademico" type="462c0819:PsiDirectoryNode" />
+              <item name="team4" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="upb" type="462c0819:PsiDirectoryNode" />
+              <item name="team4" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MonitoreoSeguimientoAcademico" type="b2602c69:ProjectViewProjectNode" />
@@ -278,8 +256,15 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/team4/src/main/java/com/upb/team4/services/LoginService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="38" column="13" selection-start-line="38" selection-end-line="39" />
+        <state relative-caret-position="459">
+          <caret line="36" column="50" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/team4/src/main/java/com/upb/team4/beans/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
         </state>
       </provider>
     </entry>
