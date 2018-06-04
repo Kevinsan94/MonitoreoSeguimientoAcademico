@@ -12,7 +12,7 @@ import com.upb.team4.utils.AuthUtils;
 import com.upb.team4.utils.DBUtils;
 
 @Path("/update")
-public class LoginService {
+public class UpdateStudentService {
 
     @POST
     @Consumes({MediaType.APPLICATION_JSON})
