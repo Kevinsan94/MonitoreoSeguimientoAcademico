@@ -18,9 +18,6 @@ public class LoginService {
     @Consumes({MediaType.APPLICATION_JSON})
     @Produces({MediaType.TEXT_PLAIN})
     public Response validaUsuario(Usuario u) {
-
-        String response = authenticate(u.getUsername(),u.getPassword());
-
         return Response.ok(response).build();
     }
 
