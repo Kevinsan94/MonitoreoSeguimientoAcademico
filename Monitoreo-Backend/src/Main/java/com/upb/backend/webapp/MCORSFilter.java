@@ -18,6 +18,7 @@ public class MCORSFilter implements ContainerResponseFilter {
         response.getHttpHeaders().add("Access-Control-Allow-Methods",
                 "GET, POST, PUT, DELETE, OPTIONS, HEAD");
 
+        //return
         return response;
     }
 }
