@@ -15,6 +15,7 @@ public class LoginService {
     @POST
     @Consumes({MediaType.APPLICATION_JSON})
     @Produces({MediaType.TEXT_PLAIN})
+    //public Strin login (User)
     public String login(User u){
 
         String response = "Not Accepted";
