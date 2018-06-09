@@ -117,7 +117,7 @@ public class Database {
         EntityManager manager = ENTITY_MANAGER_FACTORY.createEntityManager();
         EntityTransaction transaction = null;
 
-//notas 
+//notas
         try {
             transaction = manager.getTransaction();
             transaction.begin();
