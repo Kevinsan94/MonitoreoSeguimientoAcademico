@@ -1,6 +1,7 @@
 package com.upb.backend.webapp;
 
 import com.upb.backend.entity.Student;
+import com.upb.backend.entity.User;
 import com.upb.backend.webapp.Database;
 
 import javax.ws.rs.*;
@@ -35,9 +36,10 @@ public class StudentService {
 
     @DELETE
     @Path("/delete")
-    @Consumes({MediaType.TEXT_PLAIN})
+    @Consumes({MediaType.APPLICATION_JSON})
     @Produces({MediaType.TEXT_PLAIN})
-    public Response deleteStudent(int code) {
+    public Response deleteStudent(User u) {
+        int code = u.getUsername();
         db.deleteStudent(code);
         return Response.ok("Correctly deleted").build();
     }
