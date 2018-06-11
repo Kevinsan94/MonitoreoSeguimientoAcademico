@@ -2,13 +2,13 @@ package com.upb.backend.entity;
 
 public class User {
 
-    private int username;
+    private String username;
     private String password;
 
-    public int getUsername() {
+    public String getUsername() {
         return username;
     }
-    public void setUsername(int username) {
+    public void setUsername(String username) {
         this.username = username;
     }
     public String getPassword() {

@@ -15,23 +15,22 @@ public class LoginService {
     @POST
     @Consumes({MediaType.APPLICATION_JSON})
     @Produces({MediaType.TEXT_PLAIN})
-    
     public String login(User u){
 
         String response = "Not Accepted";
-        int username=u.getUsername();
-        String password=u.getPassword();
+        String username = u.getUsername();
+        String password = u.getPassword();
         Database b = new Database();
 
-            if (!AuthUtils.verifiedCredentials(Integer.toString(username),password)){
+            if (!AuthUtils.verifiedCredentials(username, password)){
                 response = "You must enter valid username and password";
                 return response;
             }
-            if (!AuthUtils.securedPassword(Integer.toString(username), password)){
+            if (!AuthUtils.securedPassword(username, password)){
                 response = "You must enter a secure password";
                 return response;
             }
-            if (b.verifiedUser(username,password)){
+            if (b.verifiedUser(Integer.parseInt(username), password)){
                 response = "Accepted";
                 return response;
             }

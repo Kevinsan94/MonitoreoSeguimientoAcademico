@@ -39,7 +39,7 @@ public class StudentService {
     @Consumes({MediaType.APPLICATION_JSON})
     @Produces({MediaType.TEXT_PLAIN})
     public Response deleteStudent(User u) {
-        int code = u.getUsername();
+        int code = Integer.parseInt(u.getUsername());
         db.deleteStudent(code);
         return Response.ok("Correctly deleted").build();
     }

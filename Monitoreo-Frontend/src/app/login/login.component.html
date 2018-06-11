@@ -1,7 +1,10 @@
-
-<form (submit)="$event">
-  <input type="text" placeholder="Code" id="user">
-  <input type="password" placeholder="Password" id="pass">
-  <input type="submit" placeholder="Login">
-</form>
-
+<div class="login-page" (submit)="loginUser($event)">
+  <div class="form">
+    <form class="login-form">
+      <input type="text" autocomplete="off" placeholder="code" id="user"/>
+      <input type="password" autocomplete="off" placeholder="password" id="pass"/>
+      <button type="submit">login</button>
+    </form>
+    <p id="message">{{errMessage}}</p>
+  </div>
+</div>

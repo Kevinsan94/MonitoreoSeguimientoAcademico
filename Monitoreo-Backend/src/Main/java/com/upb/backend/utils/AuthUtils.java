@@ -4,7 +4,7 @@ public class AuthUtils {
 
     public static Boolean verifiedCredentials(String username, String password) {
 
-        return username != null && password != null;
+        return username != null || password != null;
     }
 
     public static Boolean securedPassword(String username, String password){

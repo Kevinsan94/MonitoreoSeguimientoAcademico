@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {LoginService} from '../services/login.service';
 
 @Component({
   selector: 'app-login',
@@ -6,18 +7,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-
-  constructor() { }
+errMessage = '';
+  constructor(private Login: LoginService) { }
 
   ngOnInit() {
   }
 
   loginUser(event) {
     event.preventDefault();
-    const target = event.target
-    const username = target.getElementById('user');
-    const password = target.getElementById('pass');
-    console.log(event);
+    const target = event.target;
+    const user = target.querySelector('#user').value;
+    const pass = target.querySelector('#pass').value;
+    const newUser = {
+      username: user,
+      password: pass
+    };
+    this.Login.getUserDetails(newUser).subscribe(data => {
+      this.errMessage = data.text();
+      console.log(data);
+    });
   }
 
 }
