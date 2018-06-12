@@ -13,6 +13,13 @@ public class StudentService {
 
     Database db = new Database();
 
+    @GET
+    @Path("/get")
+    @Produces({MediaType.APPLICATION_JSON})
+    public Student getStudent(@QueryParam("id") int id) {
+        return db.getStudent(id);
+    }
+
     @POST
     @Path("/create")
     @Consumes({MediaType.APPLICATION_JSON})

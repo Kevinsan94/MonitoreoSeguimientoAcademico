@@ -41,6 +41,27 @@ public class Database {
         return  verified;
     }
 
+    public Student getStudent(int id) {
+
+        EntityManager manager = ENTITY_MANAGER_FACTORY.createEntityManager();
+        EntityTransaction transaction = null;
+        Student stu = null;
+        try {
+            transaction = manager.getTransaction();
+            transaction.begin();
+            stu = manager.find(Student.class, id);
+            transaction.commit();
+        } catch (Exception ex) {
+            if (transaction != null) {
+                transaction.rollback();
+            }
+            ex.printStackTrace();
+        } finally {
+            manager.close();
+        }
+        return stu;
+    }
+
     public void createStudent(Student stu) {
 
         EntityManager manager = ENTITY_MANAGER_FACTORY.createEntityManager();

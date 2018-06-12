@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {LoginService} from '../services/login.service';
+import {Router} from '@angular/router';
+import {StudentService} from '../services/student.service';
 
 @Component({
   selector: 'app-login',
@@ -8,7 +10,7 @@ import {LoginService} from '../services/login.service';
 })
 export class LoginComponent implements OnInit {
 errMessage = '';
-  constructor(private Login: LoginService) { }
+  constructor(private Login: LoginService, private router: Router, private Student: StudentService) { }
 
   ngOnInit() {
   }
@@ -23,8 +25,14 @@ errMessage = '';
       password: pass
     };
     this.Login.getUserDetails(newUser).subscribe(data => {
-      this.errMessage = data.text();
-      console.log(data);
+      if (data.text() === 'Accepted') {
+        this.errMessage = '';
+        this.router.navigate(['student']);
+        console.log(data.text());
+        this.Student.setId(user);
+      } else {
+        this.errMessage = data.text();
+      }
     });
   }
 

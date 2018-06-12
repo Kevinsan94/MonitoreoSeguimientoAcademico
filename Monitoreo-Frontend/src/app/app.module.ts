@@ -6,17 +6,37 @@ import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './login/login.component';
 import {LoginService} from './services/login.service';
 import {HttpModule} from '@angular/http';
+import {RouterModule} from '@angular/router';
+import { HomeComponent } from './home/home.component';
+import { StudentComponent } from './student/student.component';
+import {StudentService} from './services/student.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    HomeComponent,
+    StudentComponent,
   ],
   imports: [
     BrowserModule,
-    HttpModule
+    HttpModule,
+    RouterModule.forRoot([
+      {
+        path: 'login',
+        component: LoginComponent
+      },
+      {
+        path: 'home',
+        component: HomeComponent
+      },
+      {
+        path: 'student',
+        component: StudentComponent
+      }
+    ])
   ],
-  providers: [LoginService],
+  providers: [LoginService, StudentService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
