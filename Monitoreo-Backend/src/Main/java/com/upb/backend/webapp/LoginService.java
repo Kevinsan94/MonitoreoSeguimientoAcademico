@@ -12,6 +12,8 @@ import javax.ws.rs.core.MediaType;
 @Path("/login")
 public class LoginService {
 
+    Database db = new Database();
+
     @POST
     @Consumes({MediaType.APPLICATION_JSON})
     @Produces({MediaType.TEXT_PLAIN})
@@ -20,7 +22,6 @@ public class LoginService {
         String response = "Not Accepted";
         String username = u.getUsername();
         String password = u.getPassword();
-        Database b = new Database();
 
             if (!AuthUtils.verifiedCredentials(username, password)){
                 response = "You must enter valid username and password";
@@ -30,7 +31,7 @@ public class LoginService {
                 response = "You must enter a secure password";
                 return response;
             }
-            if (b.verifiedUser(Integer.parseInt(username), password)){
+            if (db.verifiedUser(Integer.parseInt(username), password)){
                 response = "Accepted";
                 return response;
             }

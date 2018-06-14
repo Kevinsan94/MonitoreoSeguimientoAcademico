@@ -10,6 +10,7 @@
         <!-- Entity classes -->
 		<class>com.upb.backend.entity.Student</class>
 		<class>com.upb.backend.entity.Notes</class>
+		<class>com.upb.backend.entity.Teacher</class>
 
 		<properties>
 
