@@ -1,3 +1,21 @@
-<div id="buttons">
+<div id="buttons" class="login-page">
   <a routerLink="/login" class="button">Login</a>
+  <div>
+    <table class="form" border="1" cellpadding="5" cellspacing="1">
+      <tr>
+        <th>Code</th>
+        <th>Name</th>
+        <th>Last Name</th>
+        <th>Number</th>
+        <th>Email</th>
+      </tr>
+      <tr *ngFor = "let d of data">
+        <td><a>{{d.code}}</a></td>
+        <td><a>{{d.name}}</a></td>
+        <td><a>{{d.lastname}}</a></td>
+        <td><a>{{d.number}}</a></td>
+        <td><a>{{d.email}}</a></td>
+      </tr>
+    </table>
+  </div>
 </div>

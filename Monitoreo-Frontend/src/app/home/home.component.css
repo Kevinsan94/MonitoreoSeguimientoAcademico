@@ -1,0 +1,21 @@
+.login-page {
+  width: 600px;
+  padding: 4% 0 0;
+  margin: auto;
+}
+.form {
+  position: center;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 500px;
+  padding: 45px;
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.form a{
+  font-weight: normal;
+  font-size: 18px;
+}

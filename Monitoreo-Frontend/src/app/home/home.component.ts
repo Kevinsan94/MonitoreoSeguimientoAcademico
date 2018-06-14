@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {StudentService} from '../services/student.service';
+import {Observable} from 'rxjs';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  data: Observable<Array<any>>;
+
+  constructor(private Student: StudentService) { }
 
   ngOnInit() {
+    this.Student.getStudents().subscribe( res => {
+      this.data = JSON.parse(res['_body']);
+      console.log(this.data);
+    });
   }
 
 }
