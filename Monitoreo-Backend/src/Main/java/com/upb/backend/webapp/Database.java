@@ -22,14 +22,10 @@ public class Database {
         try {
             transaction = manager.getTransaction();
             transaction.begin();
-            Teacher tea = manager.find(Teacher.class, username);
             Student stu = manager.find(Student.class, username);
 
             if (stu!=null){
                 verified = stu.getPassword().equals(pass);
-            }
-            if (tea!=null){
-                verified = tea.getPassword().equals(pass);
             }
             else{
                 return false;

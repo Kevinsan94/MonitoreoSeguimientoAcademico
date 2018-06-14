@@ -1,21 +1,54 @@
-<div id="buttons" class="login-page">
-  <a routerLink="/login" class="button">Login</a>
-  <div>
-    <table class="form" border="1" cellpadding="5" cellspacing="1">
-      <tr>
-        <th>Code</th>
-        <th>Name</th>
-        <th>Last Name</th>
-        <th>Number</th>
-        <th>Email</th>
-      </tr>
-      <tr *ngFor = "let d of data">
-        <td><a>{{d.code}}</a></td>
-        <td><a>{{d.name}}</a></td>
-        <td><a>{{d.lastname}}</a></td>
-        <td><a>{{d.number}}</a></td>
-        <td><a>{{d.email}}</a></td>
-      </tr>
-    </table>
+
+<div>
+  <div id="left" class="buttons">
+    <br><button routerLink="/login" class="button">Create Student</button>
+    <br><button routerLink="/admin" class="button">Update Student</button>
+    <br><button routerLink="/admin" class="button">Delete Student</button>
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <br><button routerLink="/login" class="button">Create Teacher</button>
+    <br><button routerLink="/admin" class="button">Update Teacher</button>
+    <br><button routerLink="/admin" class="button">Delete Teacher</button>
   </div>
+  <div id="right">
+      <div class="login-page">
+
+        <div>
+          <table class="form" border="1" cellpadding="5" cellspacing="1">
+            <tr>
+              <th>Code</th>
+              <th>Name</th>
+              <th>Last Name</th>
+              <th>Number</th>
+              <th>Email</th>
+            </tr>
+            <tr *ngFor = "let d of data">
+              <td><a>{{d.code}}</a></td>
+              <td><a>{{d.name}}</a></td>
+              <td><a>{{d.lastname}}</a></td>
+              <td><a>{{d.number}}</a></td>
+              <td><a>{{d.email}}</a></td>
+            </tr>
+          </table>
+        </div>
+      <div>
+        <table class="form" border="1" cellpadding="5" cellspacing="1">
+          <tr>
+            <th>Code</th>
+            <th>Name</th>
+            <th>Last Name</th>
+            <th>Number</th>
+            <th>Email</th>
+          </tr>
+          <tr *ngFor = "let d of data">
+            <td><a>{{d.code}}</a></td>
+            <td><a>{{d.name}}</a></td>
+            <td><a>{{d.lastname}}</a></td>
+            <td><a>{{d.number}}</a></td>
+            <td><a>{{d.email}}</a></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+</div>
 </div>

@@ -10,9 +10,6 @@ export class AppComponent implements OnInit{
   title = 'Monitoreo y Seguimiento Academico';
 
   constructor(private router: Router) {}
-  ngOnInit(): void {
-    if (true) {
-      this.router.navigate(['home']);
-    }
-  }
+  ngOnInit(): void {}
+
 }
