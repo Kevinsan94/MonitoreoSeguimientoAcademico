@@ -9,6 +9,7 @@ import {RouterModule} from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { StudentComponent } from './student/student.component';
 import {StudentService} from './services/student.service';
+import {TeacherService} from './services/teacher.service';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,7 @@ import {StudentService} from './services/student.service';
       }
     ])
   ],
-  providers: [LoginService, StudentService],
+  providers: [LoginService, StudentService, TeacherService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

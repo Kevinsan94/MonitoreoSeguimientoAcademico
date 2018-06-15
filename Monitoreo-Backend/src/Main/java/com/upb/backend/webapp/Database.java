@@ -184,6 +184,29 @@ public class Database {
         }
     }
 
+
+    public List<Teacher> getAllTeachers() {
+
+        EntityManager manager = ENTITY_MANAGER_FACTORY.createEntityManager();
+        EntityTransaction transaction = null;
+        List<Teacher> teachers = null;
+        try {
+            transaction = manager.getTransaction();
+            transaction.begin();
+            TypedQuery<Teacher> query = manager.createQuery("select e from Teacher e", Teacher.class);
+            teachers = query.getResultList();
+            transaction.commit();
+        } catch (Exception ex) {
+            if (transaction != null) {
+                transaction.rollback();
+            }
+            ex.printStackTrace();
+        } finally {
+            manager.close();
+        }
+        return teachers;
+    }
+
     public Teacher getTeacher(int id) {
 
         EntityManager manager = ENTITY_MANAGER_FACTORY.createEntityManager();

@@ -4,7 +4,6 @@
     <br><button routerLink="/login" class="button">Create Student</button>
     <br><button routerLink="/admin" class="button">Update Student</button>
     <br><button routerLink="/admin" class="button">Delete Student</button>
-    <br><br><br><br><br><br><br><br><br><br><br>
     <br><button routerLink="/login" class="button">Create Teacher</button>
     <br><button routerLink="/admin" class="button">Update Teacher</button>
     <br><button routerLink="/admin" class="button">Delete Teacher</button>
@@ -14,6 +13,7 @@
 
         <div>
           <table class="form" border="1" cellpadding="5" cellspacing="1">
+            Lista de Alumnos<br><br>
             <tr>
               <th>Code</th>
               <th>Name</th>
@@ -32,6 +32,7 @@
         </div>
       <div>
         <table class="form" border="1" cellpadding="5" cellspacing="1">
+          Lista de Docentes<br><br>
           <tr>
             <th>Code</th>
             <th>Name</th>
@@ -39,10 +40,10 @@
             <th>Number</th>
             <th>Email</th>
           </tr>
-          <tr *ngFor = "let d of data">
+          <tr *ngFor = "let d of data1">
             <td><a>{{d.code}}</a></td>
             <td><a>{{d.name}}</a></td>
-            <td><a>{{d.lastname}}</a></td>
+            <td><a>{{d.last_name}}</a></td>
             <td><a>{{d.number}}</a></td>
             <td><a>{{d.email}}</a></td>
         </tr>

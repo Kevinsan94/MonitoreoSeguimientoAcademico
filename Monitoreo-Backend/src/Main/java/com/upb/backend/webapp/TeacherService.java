@@ -7,11 +7,24 @@ import com.upb.backend.entity.User;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
+import java.util.List;
 
 @Path("/teacher")
 public class TeacherService {
 
     private Database db = new Database();
+
+
+    @GET
+    @Path("/get/all")
+    @Produces({MediaType.APPLICATION_JSON})
+    public Response getAllTeachers(){
+        List<Teacher> teachers = db.getAllTeachers();
+        if (teachers != null){
+            return Response.ok().entity(teachers).build();
+        }
+        return Response.serverError().build();
+    }
 
     @GET
     @Path("/get")
