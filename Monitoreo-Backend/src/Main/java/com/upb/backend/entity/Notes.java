@@ -14,6 +14,9 @@ public class Notes implements Serializable {
     @Column(name = "id_estudiante", unique = true)
     private int id;
 
+    @Column(name = "materia")
+    private String materia;
+
     @Column(name = "p1")
     private int p1;
 
@@ -34,6 +37,14 @@ public class Notes implements Serializable {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public String getMateria() {
+        return materia;
+    }
+
+    public void setMateria(String materia) {
+        this.materia = materia;
     }
 
     public int getP1() {

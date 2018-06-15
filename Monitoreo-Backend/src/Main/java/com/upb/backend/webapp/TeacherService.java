@@ -59,7 +59,7 @@ public class TeacherService {
     @Produces({MediaType.TEXT_PLAIN})
     public Response deleteTeacher(User u) {
         int code = Integer.parseInt(u.getUsername());
-        db.deleteStudent(code);
+        db.deleteTeacher(code);
         return Response.ok("Correctly deleted").build();
     }
 
