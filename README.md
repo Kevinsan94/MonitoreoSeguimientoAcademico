@@ -1,4 +1,4 @@
-# Monitoreo Seguimiento Academico
+﻿# Monitoreo Seguimiento Academico
 
 TABLES
 
@@ -18,7 +18,7 @@ nombre varchar(50),
 apellido varchar(50),
 telefono int,
 email varchar(50),
-contraseña varchar(50),
+password varchar(50),
 primary key(id_docente)
 );
 
@@ -29,24 +29,26 @@ primary key(id_administrador)
 );
 
 create table Notas (
+id_nota int not null auto_increment,
 id_estudiante int not null,
 materia varchar(50),
 p1 int,
 p2 int,
 p3 int,
 final int,
+primary key (id_nota),
 foreign key (id_estudiante) references Estudiante (id_estudiante)
 );
 
 
 INITIAL INSERTS
 
-insert into Notas values ('28716','Bioinformatica','54','80', '75', '70');
-insert into Notas values ('28716','Programacion I', '75', '94', '74', '80');
-insert into Notas values ('28716','Programacion II','80','31', '100', '73');
-insert into Notas values ('28716','Calculo I','75','65', '68', '69');
-insert into Notas values ('28716','Calculo II','100','100', '100', '100');
-insert into Notas values ('28716','Calculo III','50','54', '65', '57');
+insert into Notas values ('1', '28716','Bioinformatica','54','80', '75', '70');
+insert into Notas values ('2', '28716','Programacion I', '75', '94', '74', '80');
+insert into Notas values ('3', '28716','Programacion II','80','31', '100', '73');
+insert into Notas values ('4', '28716','Calculo I','75','65', '68', '69');
+insert into Notas values ('5', '28716','Calculo II','100','100', '100', '100');
+insert into Notas values ('6', '28716','Calculo III','50','54', '65', '57');
 
 
 insert into estudiante values ('28715','Matheus','GarciaMeza','70160458','monkeymon@gmail.com','mono1371');
