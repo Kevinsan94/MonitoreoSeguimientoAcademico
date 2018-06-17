@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {LoginService} from '../services/login.service';
 import {Router} from '@angular/router';
 import {StudentService} from '../services/student.service';
+import {TeacherService} from '../services/teacher.service';
 
 @Component({
   selector: 'app-login',
@@ -10,7 +11,7 @@ import {StudentService} from '../services/student.service';
 })
 export class LoginComponent implements OnInit {
 errMessage = '';
-  constructor(private Login: LoginService, private router: Router, private Student: StudentService) { }
+  constructor(private Login: LoginService, private router: Router, private Student: StudentService, private Teacher: TeacherService) { }
 
   ngOnInit() {
   }
@@ -25,10 +26,18 @@ errMessage = '';
       password: pass
     };
     this.Login.getUserDetails(newUser).subscribe(data => {
-      if (data.text() === 'Accepted') {
+      if (data.text() === 'Accepted Admin') {
+        this.errMessage = '';
+        this.router.navigate(['home']);
+      }
+      if (data.text() === 'Accepted Teacher') {
+        this.errMessage = '';
+        this.router.navigate(['teacher']);
+        this.Teacher.setId(user);
+      }
+      if (data.text() === 'Accepted Student') {
         this.errMessage = '';
         this.router.navigate(['student']);
-        console.log(data.text());
         this.Student.setId(user);
       } else {
         this.errMessage = data.text();

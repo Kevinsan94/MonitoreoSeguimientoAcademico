@@ -12,7 +12,7 @@ import javax.ws.rs.core.MediaType;
 @Path("/login")
 public class LoginService {
 
-    Database db = new Database();
+    private Database db = new Database();
 
     @POST
     @Consumes({MediaType.APPLICATION_JSON})
@@ -31,10 +31,19 @@ public class LoginService {
                 response = "You must enter a secure password";
                 return response;
             }
-            if (db.verifiedUser(Integer.parseInt(username), password)){
-                response = "Accepted";
+            if (db.verifiedAdmin(username, password)){
+                response = "Accepted Admin";
                 return response;
             }
+            if (db.verifiedStudent(Integer.parseInt(username), password)){
+                response = "Accepted Student";
+                return response;
+            }
+            if (db.verifiedTeacher(Integer.parseInt(username), password)){
+                response = "Accepted Teacher";
+                return response;
+        }
+
 
         return response;
     }

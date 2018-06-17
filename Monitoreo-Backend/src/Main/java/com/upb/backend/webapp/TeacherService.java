@@ -1,5 +1,6 @@
 package com.upb.backend.webapp;
 
+import com.upb.backend.entity.Notes;
 import com.upb.backend.entity.Student;
 import com.upb.backend.entity.Teacher;
 import com.upb.backend.entity.User;
@@ -37,19 +38,19 @@ public class TeacherService {
     @Path("/create")
     @Consumes({MediaType.APPLICATION_JSON})
     @Produces({MediaType.TEXT_PLAIN})
-    public Response createTeacher(Teacher t) {
+    public String createTeacher(Teacher t) {
 
         db.createTeacher(t);
-        return Response.ok("Correctly created").build();
+        return "Correctly created";
     }
 
     @PUT
     @Path("/update")
     @Consumes({MediaType.APPLICATION_JSON})
     @Produces({MediaType.TEXT_PLAIN})
-    public Response updateTeacher(Teacher s) {
+    public String updateTeacher(Teacher s) {
         db.updateTeacher(s.getCode(), s.getName(), s.getLast_name(), s.getNumber(), s.getEmail(), s.getPassword());
-        return Response.ok("Correctly updated").build();
+        return "Correctly updated";
     }
 
 
@@ -57,10 +58,16 @@ public class TeacherService {
     @Path("/delete")
     @Consumes({MediaType.APPLICATION_JSON})
     @Produces({MediaType.TEXT_PLAIN})
-    public Response deleteTeacher(User u) {
+    public String deleteTeacher(User u) {
         int code = Integer.parseInt(u.getUsername());
         db.deleteTeacher(code);
-        return Response.ok("Correctly deleted").build();
+        return "Correctly deleted";
     }
 
+    public static void main(String[] args){
+
+        Database db = new Database();
+        List<Notes> notas = db.getNotes(28716);
+        System.out.print(notas.toArray().toString());
+    }
 }

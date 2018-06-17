@@ -42,4 +42,52 @@ export class StudentService {
     return this.http.get(url, requestOptions);
   }
 
+  createStudent(newStudent) {
+    const inf = JSON.stringify(newStudent);
+    const url = 'http://localhost:8080/backend/student/create';
+    const headers = new Headers();
+    headers.append('Content-Type', 'application/json');
+    headers.append('Accept', 'text/plain');
+    const requestOptions = new RequestOptions({
+      method: RequestMethod.Post,
+      headers: headers,
+      url: url,
+      body: inf
+    });
+    console.log(newStudent);
+    return this.http.post(url, inf, requestOptions);
+  }
+
+  updateStudent(newStudent) {
+    const inf = JSON.stringify(newStudent);
+    const url = 'http://localhost:8080/backend/student/update';
+    const headers = new Headers();
+    headers.append('Content-Type', 'application/json');
+    headers.append('Accept', 'text/plain');
+    const requestOptions = new RequestOptions({
+      method: RequestMethod.Put,
+      headers: headers,
+      url: url,
+      body: inf
+    });
+    console.log(newStudent);
+    return this.http.post(url, inf, requestOptions);
+  }
+
+  deleteStudent(code) {
+    const inf = JSON.stringify(code);
+    const url = 'http://localhost:8080/backend/student/delete';
+    const headers = new Headers();
+    headers.append('Content-Type', 'application/json');
+    headers.append('Accept', 'text/plain');
+    const requestOptions = new RequestOptions({
+      method: RequestMethod.Delete,
+      headers: headers,
+      url: url,
+      body: inf
+    });
+    console.log(code);
+    return this.http.post(url, inf, requestOptions);
+  }
+
 }

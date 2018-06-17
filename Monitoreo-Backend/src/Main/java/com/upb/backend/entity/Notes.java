@@ -11,8 +11,11 @@ import java.io.Serializable;
 public class Notes implements Serializable {
 
     @Id
-    @Column(name = "id_estudiante", unique = true)
+    @Column(name = "id_nota")
     private int id;
+
+    @Column(name = "id_estudiante")
+    private int student_id;
 
     @Column(name = "materia")
     private String materia;
@@ -30,6 +33,13 @@ public class Notes implements Serializable {
     private int final_note;
 
 
+    public int getStudent_id() {
+        return student_id;
+    }
+
+    public void setStudent_id(int student_id) {
+        this.student_id = student_id;
+    }
 
     public int getId() {
         return id;

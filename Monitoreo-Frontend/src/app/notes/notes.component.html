@@ -1,0 +1,23 @@
+<div class="login-page">
+
+  <div>
+    <table class="form" border="1" cellpadding="5" cellspacing="1">
+      Grades<br><br>
+      <tr>
+        <th>Subject</th>
+        <th>P1</th>
+        <th>P2</th>
+        <th>P3</th>
+        <th>Final</th>
+      </tr>
+      <tr *ngFor = "let d of data">
+        <td><a>{{d.materia}}</a></td>
+        <td><a>{{d.p1}}</a></td>
+        <td><a>{{d.p2}}</a></td>
+        <td><a>{{d.p3}}</a></td>
+        <td><a>{{d.final_note}}</a></td>
+      </tr>
+      <br><button routerLink="/student" class="button">Return</button>
+    </table>
+  </div>
+</div>

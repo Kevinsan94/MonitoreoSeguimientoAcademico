@@ -1,0 +1,17 @@
+<div class="login-page" (submit)="updateTeacher($event)">
+  <div class="form">
+    <form class="login-form">
+      <input type="text" autocomplete="off" placeholder="code" id="codigo"/>
+      <input type="text" autocomplete="off" placeholder="name" id="nombre"/>
+      <input type="text" autocomplete="off" placeholder="last name" id="apellido"/>
+      <input type="text" autocomplete="off" placeholder="number" id="fono"/>
+      <input type="text" autocomplete="off" placeholder="email" id="mail"/>
+      <input type="text" autocomplete="off" placeholder="password" id="pass"/>
+      <button type="submit">Update Teacher</button>
+      <br><br>
+      <button routerLink="/home" class="button">return</button>
+    </form>
+    <p id="message">{{Message}}</p>
+    <b>{{errMessage}}</b>
+  </div>
+</div>

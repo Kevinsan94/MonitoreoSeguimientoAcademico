@@ -1,0 +1,17 @@
+<div class="login-page" (submit)="insertGrades($event)">
+  <div class="form">
+    <form id="form" class="login-form">
+      <input type="text" autocomplete="off" placeholder="student code" id="code" required/>
+      <input type="text" autocomplete="off" placeholder="subject" id="subject" required/>
+      <input type="text" autocomplete="off" placeholder="first grade" id="p1" required/>
+      <input type="text" autocomplete="off" placeholder="second grade" id="p2" required/>
+      <input type="text" autocomplete="off" placeholder="third grade" id="p3" required/>
+
+      <button type="submit">Insert grades</button>
+      <br><br>
+      <button routerLink="/home" class="button">return</button>
+    </form>
+    <p>{{Message}}</p>
+    <b>{{errMessage}}</b>
+  </div>
+</div>

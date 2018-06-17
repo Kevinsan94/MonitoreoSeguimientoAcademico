@@ -1,5 +1,6 @@
 package com.upb.backend.webapp;
 
+import com.upb.backend.entity.Admin;
 import com.upb.backend.entity.Notes;
 import com.upb.backend.entity.Student;
 import com.upb.backend.entity.Teacher;
@@ -15,7 +16,60 @@ public class Database {
     public Database(){
     }
 
-    public Boolean verifiedUser(int username, String pass){
+    public Boolean verifiedAdmin(String username, String pass){
+        EntityManager manager = ENTITY_MANAGER_FACTORY.createEntityManager();
+        EntityTransaction transaction = null;
+        Boolean verified = false;
+        try {
+            transaction = manager.getTransaction();
+            transaction.begin();
+            Admin admin = manager.find(Admin.class, username);
+
+            if (admin!=null){
+                verified = admin.getPassword().equals(pass);
+            }
+            else{
+                return false;
+            }
+
+        } catch (Exception ex) {
+            if (transaction != null) {
+                transaction.rollback();
+            }
+            ex.printStackTrace();
+        } finally {
+            manager.close();
+        }
+        return  verified;
+    }
+
+    public Boolean verifiedTeacher(int username, String pass){
+        EntityManager manager = ENTITY_MANAGER_FACTORY.createEntityManager();
+        EntityTransaction transaction = null;
+        Boolean verified = false;
+        try {
+            transaction = manager.getTransaction();
+            transaction.begin();
+            Teacher tea = manager.find(Teacher.class, username);
+
+            if (tea!=null){
+                verified = tea.getPassword().equals(pass);
+            }
+            else{
+                return false;
+            }
+
+        } catch (Exception ex) {
+            if (transaction != null) {
+                transaction.rollback();
+            }
+            ex.printStackTrace();
+        } finally {
+            manager.close();
+        }
+        return  verified;
+    }
+    public Boolean verifiedStudent(int username, String pass){
         EntityManager manager = ENTITY_MANAGER_FACTORY.createEntityManager();
         EntityTransaction transaction = null;
         Boolean verified = false;
@@ -129,7 +183,7 @@ public class Database {
 
 
     public void updateStudent(int id, String name, String lastname, int telefono, String email, String pass) {
-        // Create an EntityManager
+
         EntityManager manager = ENTITY_MANAGER_FACTORY.createEntityManager();
         EntityTransaction transaction = null;
 
@@ -156,17 +210,16 @@ public class Database {
     }
 
 
-    public void insertNotes(int id, int p1,int p2, int p3) {
+    public void insertNotes(int id, String materia, int p1,int p2, int p3) {
 
         EntityManager manager = ENTITY_MANAGER_FACTORY.createEntityManager();
         EntityTransaction transaction = null;
-
-//notas
         try {
             transaction = manager.getTransaction();
             transaction.begin();
             Notes n = new Notes();
-            n.setId(id);
+            n.setStudent_id(id);
+            n.setMateria(materia);
             n.setP1(p1);
             n.setP2(p2);
             n.setP3(p3);
@@ -184,6 +237,27 @@ public class Database {
         }
     }
 
+    public List<Notes> getNotes(int id) {
+
+        EntityManager manager = ENTITY_MANAGER_FACTORY.createEntityManager();
+        EntityTransaction transaction = null;
+        List<Notes> notes = null;
+        try {
+            transaction = manager.getTransaction();
+            transaction.begin();
+            TypedQuery<Notes> query = manager.createQuery("SELECT e from Notes e WHERE student_id LIKE "+ id, Notes.class);
+            notes = query.getResultList();
+            transaction.commit();
+        } catch (Exception ex) {
+            if (transaction != null) {
+                transaction.rollback();
+            }
+            ex.printStackTrace();
+        } finally {
+            manager.close();
+        }
+        return notes;
+    }
 
     public List<Teacher> getAllTeachers() {
 
@@ -272,7 +346,6 @@ public class Database {
 
 
     public void updateTeacher(int id, String name, String lastname, int telefono, String email, String pass) {
-        // Create an EntityManager
         EntityManager manager = ENTITY_MANAGER_FACTORY.createEntityManager();
         EntityTransaction transaction = null;
 

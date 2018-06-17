@@ -2,6 +2,7 @@ package com.upb.backend.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.Table;
 import java.io.Serializable;
 
@@ -9,6 +10,7 @@ import java.io.Serializable;
 @Table(name="Administrador")
 public class Admin implements Serializable {
 
+    @Id
     @Column(name = "id_administrador", unique = true)
     private String id_admin;
 

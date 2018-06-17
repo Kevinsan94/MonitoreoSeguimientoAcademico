@@ -1,19 +1,33 @@
 
 <div>
   <div id="left" class="buttons">
-    <br><button routerLink="/login" class="button">Create Student</button>
-    <br><button routerLink="/admin" class="button">Update Student</button>
-    <br><button routerLink="/admin" class="button">Delete Student</button>
-    <br><button routerLink="/login" class="button">Create Teacher</button>
-    <br><button routerLink="/admin" class="button">Update Teacher</button>
-    <br><button routerLink="/admin" class="button">Delete Teacher</button>
+    <br>
+    <br>
+    <a class="menu">Actions:</a>
+    <br>
+    <br>
+    <a class="menu">Student</a>
+    <br><button routerLink="/student/create" class="button">Create Student</button>
+    <br><button routerLink="/student/update" class="button">Update Student</button>
+    <br><button routerLink="/student/delete" class="button">Delete Student</button>
+    <br>
+    <br>
+    <br>
+    <a class="menu">Teacher</a>
+    <br><button routerLink="/teacher/create" class="button">Create Teacher</button>
+    <br><button routerLink="/teacher/update" class="button">Update Teacher</button>
+    <br><button routerLink="/teacher/delete" class="button">Delete Teacher</button>
+    <br>
+    <br>
+    <br>
+    <br><button routerLink="/login" class="button">Logout</button>
   </div>
   <div id="right">
       <div class="login-page">
 
         <div>
           <table class="form" border="1" cellpadding="5" cellspacing="1">
-            Lista de Alumnos<br><br>
+            Student List:<br><br>
             <tr>
               <th>Code</th>
               <th>Name</th>
@@ -32,7 +46,7 @@
         </div>
       <div>
         <table class="form" border="1" cellpadding="5" cellspacing="1">
-          Lista de Docentes<br><br>
+          Teacher List:<br><br>
           <tr>
             <th>Code</th>
             <th>Name</th>
