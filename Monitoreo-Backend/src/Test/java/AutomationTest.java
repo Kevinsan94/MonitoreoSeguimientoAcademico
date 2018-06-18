@@ -76,6 +76,7 @@ public class AutomationTest {
                 "Correctly updated",
                 updateStudentPage.verificationText.getTextValue());
 
+
         Thread.sleep(2000);
     }
 
@@ -104,6 +105,10 @@ public class AutomationTest {
         Thread.sleep(2000);
         notesInsertPage.insertNotesButton.click();
         Thread.sleep(2000);
+
+        //Thread.sleep(2000);
+//        notesInsertPage.thirdTextBox.set("96");
+
 
         Assert.assertEquals("Error",
                 "Correctly inserted",
